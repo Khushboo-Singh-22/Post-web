@@ -2,6 +2,10 @@
 
 A full-stack web application where users can create, view, and delete posts with image uploads.
 
+## 🌐 Live Demo
+- 🔗 Frontend: https://post-web-jmgl.vercel.app  
+- 🔗 Backend: https://post-web-backend.onrender.com  
+
 ## 🚀 Features
 - Create post with image & caption
 - View all posts (feed)
