@@ -10,17 +10,21 @@ const CreatePost = () => {
 
     const formData = new FormData(e.target)
 
-    await axios.post("http://localhost:3000/create-post", formData)
-      .then((res) => {
-        navigate('/feed')
-      })
+    try {
+      await axios.post("http://localhost:3000/create-post", formData)
+
+      navigate('/feed')
+    } catch (error) {
+      console.log(error)
+      alert("Post create nahi hua")
+    }
   }
 
   return (
     <section className='create-post-section'>
       <div className="create-post-card">
         <h1>Create Post</h1>
-        <p><h5>Upload your image and write a caption.</h5></p>
+        <h5>Upload your image and write a caption.</h5>
 
         <form onSubmit={handleSubmit}>
           <label className="file-box">
@@ -36,6 +40,10 @@ const CreatePost = () => {
           />
 
           <button type="submit">Create Post</button>
+
+          <button type="button" onClick={() => navigate('/feed')}>
+            Go to Feed
+          </button>
         </form>
       </div>
     </section>
