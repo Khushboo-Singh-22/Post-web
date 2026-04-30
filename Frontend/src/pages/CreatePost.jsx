@@ -11,12 +11,12 @@ const CreatePost = () => {
     const formData = new FormData(e.target)
 
     try {
-      await axios.post("http://localhost:3000/create-post", formData)
+      await axios.post("https://post-web-21mt.onrender.com/create-post", formData)
 
       navigate('/feed')
     } catch (error) {
       console.log(error)
-      alert("Post create nahi hua")
+      alert("Post not created. Please try again.")
     }
   }
 
