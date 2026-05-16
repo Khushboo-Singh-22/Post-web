@@ -4,7 +4,7 @@ A full-stack web application where users can create, view, and delete posts with
 
 ## 🌐 Live Demo
 - 🔗 Frontend:https://post-web-yq3l.vercel.app
-- 🔗 Backend:  https://post-web-21mt.onrender.com
+- 🔗 Backend:  https://post-web-79ng.onrender.com
 
 ## 🚀 Features
 - Create post with image & caption
